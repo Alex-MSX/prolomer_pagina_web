@@ -904,51 +904,231 @@
             }
         }
 
+        /* Tablet breakpoint - hide nav links before they wrap */
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+
+            .partners-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
-            .hero-text h1 {
-                font-size: 2.5rem;
+            /* Hero Section Mobile */
+            .hero {
+                padding-top: 70px;
+                min-height: auto;
             }
 
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .problem-grid,
-            .solution-grid,
-            .comparison-grid,
-            .testimonials-grid {
+            .hero-content {
+                padding: 2rem 5%;
                 grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1rem;
+                line-height: 1.6;
             }
 
             .hero-stats {
                 grid-template-columns: 1fr;
+                gap: 1rem;
             }
 
-            .partners-grid {
-                grid-template-columns: repeat(3, 1fr);
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+            }
+
+            /* Navigation Mobile */
+            .nav {
+                padding: 0.8rem 5%;
+            }
+
+            .logo-img {
+                height: 45px;
             }
 
             .nav-links {
                 display: none;
             }
 
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-options {
-                flex-direction: column;
-                align-items: center;
-            }
-
+            /* CTA Buttons Mobile */
             .cta-buttons {
                 flex-direction: column;
-                align-items: center;
+                gap: 1rem;
+                width: 100%;
             }
 
-            .cta-buttons .btn {
-                max-width: 400px;
+            .btn {
                 width: 100%;
+                max-width: 100%;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            /* Sections Mobile */
+            .section {
+                padding: 3rem 5%;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+                line-height: 1.3;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            /* Cards Mobile */
+            .value-card {
+                padding: 1.5rem;
+            }
+
+            .value-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .value-card p {
+                font-size: 0.95rem;
+            }
+
+            /* Grids Mobile */
+            .problem-grid,
+            .solution-grid,
+            .comparison-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .problem-card,
+            .solution-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .problem-icon {
+                font-size: 2.5rem;
+            }
+
+            /* Numbers Section Mobile */
+            .numbers-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .big-number {
+                font-size: 3rem;
+            }
+
+            /* Process Section Mobile */
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .process-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .process-step h4 {
+                font-size: 1.1rem;
+            }
+
+            .process-step p {
+                font-size: 0.9rem;
+            }
+
+            /* Testimonials Mobile */
+            .testimonial-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .testimonial-quote {
+                font-size: 1rem;
+            }
+
+            /* Partners/Insurers Mobile */
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .partner-logo {
+                padding: 1rem;
+                height: 80px;
+            }
+
+            /* Comparison Cards Mobile */
+            .comparison-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .comparison-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .comparison-list li {
+                padding: 0.8rem 0;
+                font-size: 0.9rem;
+            }
+
+            .comparison-icon {
+                font-size: 1.2rem;
+            }
+
+            /* Trust Bar Mobile */
+            .trust-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .trust-text {
+                font-size: 0.95rem;
+            }
+
+            /* Contact Section Mobile */
+            .contact-options {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .contact-card {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            /* Footer Mobile */
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-brand p {
+                font-size: 0.95rem;
+            }
+
+            /* WhatsApp Float Mobile */
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -1367,7 +1547,7 @@
                 </div>
                 <div class="contact-card">
                     <h4>📧 Escríbenos</h4>
-                    <p>contacto@prolomer.com.mx<br>Respuesta en 24 horas</p>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9dad6d7cdd8dacdd6f9c9cbd6d5d6d4dccb97dad6d497d4c1">[email&#160;protected]</a><br>Respuesta en 24 horas</p>
                 </div>
             </div>
         </div>
@@ -1405,7 +1585,7 @@
                 <h4>Contacto</h4>
                 <ul>
                     <li>📞 55 5374 4044</li>
-                    <li>📧 contacto@prolomer.com.mx</li>
+                    <li>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4e2d21203a2f2d3a210e3e3c212221232b3c602d2123602336">[email&#160;protected]</a></li>
                     <li>📍 Federico T. de la Chica 16 - 101</li>
                     <li>Ciudad Satélite, Naucalpan</li>
                     <li>Estado de México, CP 53100</li>
@@ -1420,8 +1600,4 @@
     <a href="https://wa.me/525553744044?text=Hola,%20me%20gustaría%20información%20sobre%20seguros" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
         <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
             <path d="M16.002 0C7.164 0 0 7.163 0 16c0 2.825.736 5.482 2.026 7.784L.028 31.518l8.023-2.005A15.938 15.938 0 0016.002 32C24.838 32 32 24.837 32 16S24.838 0 16.002 0zm0 29.455c-2.548 0-4.942-.707-6.982-1.935l-.501-.297-5.185 1.295 1.314-5.041-.326-.518A13.391 13.391 0 012.545 16c0-7.42 6.036-13.455 13.457-13.455S29.457 8.58 29.457 16 23.42 29.455 16.002 29.455z"/>
-            <path d="M23.87 19.47c-.396-.198-2.343-1.156-2.706-1.289-.363-.132-.627-.198-.891.198-.264.396-1.023 1.289-1.254 1.553-.231.264-.462.297-.858.099-.396-.198-1.672-.616-3.184-1.964-1.177-1.049-1.971-2.344-2.202-2.74-.231-.396-.025-.61.174-.807.178-.178.396-.462.594-.693.198-.231.264-.396.396-.66.132-.264.066-.495-.033-.693-.099-.198-.891-2.146-1.221-2.938-.322-.77-.649-.666-.891-.679-.231-.013-.495-.016-.759-.016-.264 0-.693.099-1.056.495-.363.396-1.386 1.354-1.386 3.302s1.419 3.83 1.617 4.094c.198.264 2.794 4.266 6.77 5.981.946.409 1.685.653 2.261.836.95.302 1.815.259 2.499.157.762-.114 2.343-.958 2.673-1.883.33-.925.33-1.718.231-1.883-.099-.165-.363-.264-.759-.462z"/>
-        </svg>
-    </a>
-</body>
-</html>
+            <path d="M23.87 19.47c-.396-.198-2.343-1.156-2.706-1.289-.363-.132-.627-.198-.891.198-.264.396-1.023 1.289-1.254 1.553-.231.264-.462.297-.858.099-.396-.198-1.672-.616-3.184-1.964-1.177-1.049-1.971-2.344-2.202-2.74-.231-.396-.025-.61.174-.807.178-.178.396-.462.594-.693.198-.231.264-.396.396-.66.132-.264.066-.495-.033-.693-.099-.198-.891-2.146-1.221-2.938-.322-.77-.649-.666-.891-.679-.231-.013-.495-.016-.759-.016-.264 0-.693.099-1.056.495-.363.396-1.386 1.354-1.386 
